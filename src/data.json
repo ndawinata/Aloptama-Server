@@ -1,0 +1,106 @@
+[
+    {
+        "sukarno hatta":[
+            {
+                "AWOS":[
+                    {
+                        "meta":{
+                            "lokasi":"Sta. Met Soekarno Hatta",
+                            "merk":"EEC",
+                            "tahun":"2009"
+                        }
+                    },
+                    {
+                        "data":[
+                            {
+                                "Time":"Senin, 23 April 2020",
+                                "lokasi":"Sta. Met Soekarno Hatta",
+                                "merk":"EEC",
+                                "tahun":"2009",
+                                "kondisi":"ON",
+                                "catatan":"Aman",
+                                "foto":"/home/sukarno-hatta/awos/on/timestamp.png"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "AWS":[
+                    {
+                        "meta":{
+                            "lokasi":"Sta. Met Soekarno Hatta",
+                            "merk":"EEC",
+                            "tahun":"2009"
+                        }
+                    },
+                    {
+                        "data":[
+                            {
+                                "Time":"Senin, 23 April 2020",
+                                "lokasi":"Sta. Met Soekarno Hatta",
+                                "merk":"EEC",
+                                "tahun":"2009",
+                                "kondisi":"ON",
+                                "catatan":"Aman",
+                                "foto":"/home/sukarno-hatta/awos/on/timestamp.png"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Staklim Malang":[
+            {
+                "AWOS":[
+                    {
+                        "meta":{
+                            "lokasi":"Sta. Met Soekarno Hatta",
+                            "merk":"EEC",
+                            "tahun":"2009"
+                        }
+                    },
+                    {
+                        "data":[
+                            {
+                                "Time":"Senin, 23 April 2020",
+                                "lokasi":"Sta. Met Soekarno Hatta",
+                                "merk":"EEC",
+                                "tahun":"2009",
+                                "kondisi":"ON",
+                                "catatan":"Aman",
+                                "foto":"/home/sukarno-hatta/awos/on/timestamp.png"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "AWS":[
+                    {
+                        "meta":{
+                            "lokasi":"Sta. Met Soekarno Hatta",
+                            "merk":"EEC",
+                            "tahun":"2009"
+                        }
+                    },
+                    {
+                        "data":[
+                            {
+                                "Time":"Senin, 23 April 2020",
+                                "lokasi":"Sta. Met Soekarno Hatta",
+                                "merk":"EEC",
+                                "tahun":"2009",
+                                "kondisi":"ON",
+                                "catatan":"Aman",
+                                "foto":"/home/sukarno-hatta/awos/on/timestamp.png"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

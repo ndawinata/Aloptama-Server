@@ -1,0 +1,14 @@
+{
+    "SukarnoHatta":{
+        "AWOS":{
+            "Lokasi":"Sta. Met Soekarno Hatta",
+            "Merk":"EEC",
+            "Tahun":2009
+        },
+        "AWS":{
+            "Lokasi":"Sta. Met Soekarno Hatta",
+            "Merk":"EEC",
+            "Tahun":2009
+        }
+    }
+}

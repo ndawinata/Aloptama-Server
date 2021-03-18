@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/bcryptjs@0.7.12/bcrypt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h3>Upload</h3>
+    <form>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="pass">Password:</label><br>
+        <input type="password" id="pass" name="pass" ><br>
+        <br>
+        <button type="submit">Login</button> 
+    </form> 
+    <script type="text/javascript"> 
+        var bcrypt = dcodeIO.bcrypt;
+        // var salt = bcrypt.genSaltSync(10);
+        // var sha256Hash = CryptoJS.SHA256("Test1");
+
+        // console.log('md5 : ', md5Hash.toString());
+        // console.log('sha : ', sha256Hash.toString());
+        window.addEventListener("load", () => { 
+            const form = document.querySelector("form"); 
+            form.addEventListener("submit", (e) => { 
+                e.preventDefault(); 
+                let data = new FormData(e.target); 
+                let email = data.get('email')
+                // let pass = bcrypt.hashSync(data.get('pass'), salt);
+                var sha256Hash = CryptoJS.SHA256(data.get('pass'))
+                let pass = sha256Hash.toString()
+
+                let dat = {
+                    "email":email,
+                    "pass":pass
+                }
+                // console.log(dat); 
+                axios.post('http://localhost:5000/api/login', dat)
+                    .then((res)=>{
+                        console.log(res.data)
+                    })
+                // axios({ 
+                //     method: "post", 
+                //     url: "http://localhost:5000/", 
+                //     data: data, 
+                // }) 
+                //     .then((res) => { 
+                //         console.log(res); 
+                //     }) 
+                //     .catch((err) => { 
+                //         throw err; 
+                //     }); 
+            }); 
+        }); 
+    </script> 
+</body>
+</html>
